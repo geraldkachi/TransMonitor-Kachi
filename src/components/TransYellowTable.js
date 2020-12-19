@@ -2,9 +2,9 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 import vw from "../images/vw.svg";
 import tri from "../images/Object.svg";
-import Ellipse from "../images/Ellipse.svg";
+import yellowBall from "../images/yellowBall.svg";
 
-const TransTableBody = () => {
+const TransYellowTable = () => {
   return (
     <>
       <Row className="mx-0 py-3 px-3 align-content-center bg-white px-1 border-top border-bottom">
@@ -24,8 +24,8 @@ const TransTableBody = () => {
           <div className="justify-content-between d-flex">
           <Col md="2" className="py-1 mx-0 px-0" >
             <div className=" dotborder rounded-pill p-2 mr-5">
-              <img src={Ellipse} alt="" />
-              <span  style={{ color: "#27AE60", paddingLeft: "10px", fontSize:"12px" }}>
+              <img src={yellowBall} altBall="" />
+              <span  style={{ color: "#EBC315", paddingLeft: "10px", fontSize:"12px" }}>
                 Reconcilled
               </span>
             </div>
@@ -39,4 +39,4 @@ const TransTableBody = () => {
   );
 };
 
-export default TransTableBody;
+export default TransYellowTable;

@@ -12,7 +12,7 @@ import {
 const TransCard = () => {
     return (
         <Row className="mx-0">
-        <Col sm="3" className="mx-0 px-2">
+        <Col sm="3" className="mx-0 px-1">
             <Card className="border-0 my-2 mx-0">
                 <div className="d-flex justify-content-between" style={{padding:"20px"}}>
                     <div>
@@ -23,7 +23,7 @@ const TransCard = () => {
                 </div>
             </Card>
         </Col>
-        <Col sm="3" className="mx-0 px-2">
+        <Col sm="3" className="mx-0 px-1">
             <Card className="border-0 my-2 mx-0">
                 <div className="d-flex justify-content-between" style={{padding:"20px"}}>
                     <div>
@@ -34,7 +34,7 @@ const TransCard = () => {
                 </div>
             </Card>
         </Col>
-        <Col sm="3" className="mx-0 px-2">
+        <Col sm="3" className="mx-0 px-1">
             <Card className="border-0 my-2 mx-0">
                 <div className="d-flex justify-content-between" style={{padding:"20px"}}>
                     <div>
@@ -45,7 +45,7 @@ const TransCard = () => {
                 </div>
             </Card>
         </Col>
-        <Col sm="3" className="mx-0 px-2">
+        <Col sm="3" className="mx-0 px-1">
             <Card className="border-0 my-2 mx-0">
                 <div className="d-flex justify-content-between" style={{padding:"20px"}}>
                     <div>

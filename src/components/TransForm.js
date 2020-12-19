@@ -1,6 +1,6 @@
 import React, { useState } from  'react'
 import { Col, Row, Button, Form, FormGroup, Label, Input,
-  Modal, ModalHeader, ModalBody, ModalFooter
+  Modal, ModalHeader, ModalBody, ModalFooter, Container
 } from 'reactstrap';
 
 const TransForm = () => {
@@ -10,8 +10,9 @@ const TransForm = () => {
   const toggle = () => setModal(!modal);
 
     return (
+      <Container fluid={true}>
         <Form>
-          <Row className="mx-0" form>
+          <Row  className="mx-0" form>
             <Col className=" px-0" md={6}>
               <FormGroup>
                 <Label for="exampleEmail">Email</Label>
@@ -59,7 +60,7 @@ const TransForm = () => {
           </FormGroup>
           <Button onClick={toggle}>Sign in</Button>
           {/*  */}
-          <Modal isOpen={modal} toggle={toggle}  className="border-0"   style={{marginTop:"130px", backgroundColor:"black"}}>
+          <Modal isOpen={modal} toggle={toggle}  className="border-0"   style={{marginTop:"130px", backgroundColor:""}}>
         <ModalHeader className="text-center bg-white" toggle={toggle} style={{marginLeft:"35%"}}>Modal title</ModalHeader>
           <ModalBody>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -70,6 +71,7 @@ const TransForm = () => {
           </ModalFooter>
       </Modal>
         </Form>
+        </Container>
       );
 }
 

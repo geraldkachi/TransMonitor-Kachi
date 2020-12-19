@@ -1,6 +1,8 @@
 import React from 'react'
 import TransTableHead from "../components/TransTableHead"
 import TransTableBody from "../components/TransTableBody"
+import TransYellowTable from "../components/TransYellowTable"
+import TransGreyTable from './TransGreyTable'
 
 
 const TransTable = () => {
@@ -8,6 +10,14 @@ const TransTable = () => {
         <>
            <TransTableHead />
            <TransTableBody />
+           <TransYellowTable />
+           <TransTableBody />
+           <TransTableBody />
+           <TransYellowTable />
+           <TransGreyTable />
+           <TransTableBody />
+           <TransGreyTable />
+           <TransYellowTable />
         </>
     )
 }

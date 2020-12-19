@@ -1,20 +1,58 @@
 .lost{
-  padding-right: 40px;
+  padding-right: 30px;
 }
 @media screen and (max-width: 800px ) {
   .lost{
     padding-right: 0px;
   }
 }
-/* @media screen and (max-wdith:900px) {
-  .side{
+@media screen and (max-width: 767px  ) {
+  .shape{
+    display: none;
+  }
+}
+/* @media screen and (max-width: 1015px ) {
+  .sidebar{
     display: none;
   }
 } */
 .leftb{
-  border-left-color: #1875F0;
-  border-left: 15px;
+  /* border-left-color: #1875F0; */
+  border-left: 4px solid rgb(24, 117, 240);;
+  /* border-left: 15px; */
 }
+.sidebar{
+  transition: all 0.5s ease-in-out 0s;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* max-width: 260px; */
+  /* position: fixed; */
+}
+.dotborder{
+  display: flex;
+  width: 120px;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #cccfd4;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 844px  ) {
+  .dotborder{
+    display: flex;
+    width: 120px;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid #cccfd4;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+}
+/* .tableborder{
+
+} */
 
 .App {
   text-align: center;

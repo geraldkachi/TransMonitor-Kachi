@@ -2,26 +2,23 @@ import React from 'react'
 import Overview from '../images/Overview.svg'
 import { Link } from 'react-router-dom'
 
-// import {  } from "../images/";
-
 import note1 from '../images/note1.svg'
 import note2 from '../images/note2.svg'
 import note3 from '../images/note3.svg'
 import single from '../images/single.svg'
 import '../App.css'
 
-
 const TransSidebar = () => {
     return (
         <>
-            <div className="d-flex flex-column justify-content-center"  style={{width:'360px'}}>
-                <div className="rounded-pill py-1 mt-5 ml-3" style={{backgroundColor:"#27AE60", marginRight:"180px"}}>
-                   <div className="text-center mr-5 pr-1" style={{color:"white", fontSize:"12px"}}>GENERATE INVOICE</div>
+            <div className="d-flex flex-column" style={{width:"260px", position:"relative", zIndex: 999}}>
+                <div className="rounded-pill mt-5 mr-5" style={{backgroundColor:"#27AE60", marginLeft:"20px", paddingTop:"6px",paddingBottom:"6px" , paddingRight:"25px", paddingLeft:"25px"}}>
+                   <div className="text-center" style={{color:"white", fontSize:"12px", fontWeight:700}}>GENERATE INVOICE</div>
                 </div>
                    <div className="my-3">
                         <div className="my-3 ml-3" style={{fontSize:"11px", color:"#647787"}}>Main</div>
 
-                        <div className="py-2 pl-3 leftb" style={{backgroundColor:"#e8f1fd", borderTopWidth:'50px', borderWidth:"12px", borderColor:"#1875F0"}}>
+                        <div className="py-2 pl-3 leftb" style={{backgroundColor:"#e8f1fd"}}>
                             <img src={Overview} alt=""/><span className="mx-2" style={{fontSize:"11px", color:"#647787"}}>Overview</span>
                         </div>
                    </div>
@@ -87,7 +84,6 @@ const TransSidebar = () => {
                            </li>
                        </ul> 
                    </div>
-
             </div>   
         </>
     )

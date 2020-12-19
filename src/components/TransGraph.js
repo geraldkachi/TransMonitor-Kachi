@@ -8,6 +8,7 @@ import {
   import LeftButton from "../images/LeftButton.svg"
   import RightButton from "../images/RightButton.svg"
   import vShape from "../images/vShape.svg"
+  import '../App.css'
 
   
 
@@ -19,12 +20,14 @@ const TransGraph = () => {
                 <div className="my-1 mx-1 bg-white">
                     <div className="">
                         <div className="d-flex justify-content-around">
-                            <div className="my-3">Today: 5, Aug 2018</div>
+                            <div className="my-3" style={{fontWeight:"bolder"}}>Today: 5, Aug 2018</div>
                             <div className="d-flex justify-content-between">
-                                <span className="my-3">
-                                    <Input type="search" className="ml-md-5 mx-1 px-0 text-center position-relative" placeholder="1 Jan - 1 Jun" style={{width:"110px"}} />   <img src={vShape} alt=""/>
-                                   
+
+                                <span className="my-3 position-relative">
+                                     <img src={vShape} style={{paddingTop:"18px", paddingLeft:"145px"}} className="position-absolute shape" alt=""/>   
+                                    <Input type="search" className="ml-md-5" placeholder=" 1 Jan - 1 Jun " style={{width:"110px"}} />
                                 </span>
+
                                 <div className="my-3">
                                     <span className="mx-2">
                                         <img src={LeftButton} alt=""/>
@@ -38,7 +41,7 @@ const TransGraph = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-around">
+                    <div className="d-flex justify-content-around" style={{fontSize:"14px", fontWeight:"bold"}}>
                         <span>Jan</span>
                         <span>Feb</span>
                         <span>Mar</span>
@@ -54,7 +57,7 @@ const TransGraph = () => {
             <Col sm="4" className="px-0">
                 <Card className="border-0 my-1 p-0">
                     <div style={{padding:"20px"}}>
-                        <div style={{fontFamily: "Segoe UI",fontSize: "14px", fontWeight: 900}}>Order</div>
+                        <div style={{fontFamily: "Segoe UI",fontSize: "14px", fontWeight: "bold"}}>Order</div>
                     <div className="progress mr-3 my-1" style={{height:"4px"}}>
                         <div className="progress-bar bg-success" role="progressbar" style={{width: "80%"}} aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                         <div className="progress-bar bg-warning" role="progressbar" style={{width: "20%"}} aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
@@ -66,7 +69,7 @@ const TransGraph = () => {
                 </Card>
                 <Card className="border-0">
                     <div style={{padding:"20px"}}>
-                    <div style={{fontFamily: "Segoe UI",fontSize: "14px", fontWeight: 900}}>Payments</div>
+                    <div style={{fontFamily: "Segoe UI",fontSize: "14px", fontWeight: "bold"}}>Payments</div>
                     <div className="progress mr-3 my-1" style={{height:"4px"}}>
                         <div className="progress-bar bg-success" role="progressbar" style={{width: "80%"}} aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                         <div className="progress-bar bg-warning" role="progressbar" style={{width: "20%"}} aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>

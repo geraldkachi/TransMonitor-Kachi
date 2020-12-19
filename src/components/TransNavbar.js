@@ -28,7 +28,7 @@ const TransNavbar = () => {
   return (
     <Fragment>
       <Navbar color="light" light expand="lg" className="bg-white shadow-sm">
-        <NavbarBrand href="/" style={{ color: "#1875F0", fontSize: "24px", fontWeight: 900, paddingLeft:"42px" }} className="mr-5">
+        <NavbarBrand href="/" style={{ color: "#1875F0", fontSize: "24px", fontWeight: 900, paddingLeft:"35px" }} className="mr-5">
           TransMonitor
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
