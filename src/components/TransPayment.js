@@ -8,16 +8,16 @@ import "../App.css"
 const TransPayment = () => {
 
     const [dropdownOpen, setOpen] = useState(false)
-    const [backdrop, setBackdrop] = useState(true);
+    // const [backdrop, setBackdrop] = useState(true);
 
     const toggle = () => setOpen(!dropdownOpen)
-    const changeBackdrop = e => {
-        let value = e.target.value;
-        if (value !== 'static') {
-          value = JSON.parse(value);
-        }
-        setBackdrop(value);
-      }
+    // const changeBackdrop = e => {
+    //     let value = e.target.value;
+    //     if (value !== 'static') {
+    //       value = JSON.parse(value);
+    //     }
+    //     setBackdrop(value);
+    //   }
 
     return (
         <>
@@ -51,7 +51,9 @@ const TransPayment = () => {
                <span className="pt-2">Show  &nbsp;</span>
                {" "}
                     <span>
-                        <Input type="select" name="backdrop" id="backdrop" onChange={changeBackdrop} className="inline-block" placeholder="All" caret onClick={toggle} style={{borderColor:"none",boxShadow:'none'}}>
+                        <Input type="select" name="backdrop" id="backdrop" 
+                        // onChange={changeBackdrop}
+                         className="inline-block" placeholder="All" caret onClick={toggle} style={{borderColor:"none",boxShadow:'none'}}>
                         <option className="" value="true">All</option>
                         <option className="" value="false">Reconcilled</option>
                         <option className="" value="false">Un-reconcille</option>
