@@ -24,7 +24,7 @@ const TransYellowTable = () => {
           <div className="justify-content-between d-flex">
           <Col md="2" className="py-1 mx-0 px-0" >
             <div className=" dotborder rounded-pill p-2 mr-5">
-              <img src={yellowBall} altBall="" />
+              <img src={yellowBall} alt="" />
               <span  style={{ color: "#EBC315", paddingLeft: "10px", fontSize:"12px" }}>
                 Reconcilled
               </span>
